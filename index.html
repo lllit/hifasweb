@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spline Demo</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <img class="image-gradient" src="./assets/gradient.png" alt="Gradient">
+    <div class="layer-blur"></div>
+    <div class="container">
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">HIFAS</h1>
+            <nav>
+                <a data-aos="fade-down" data-aos-duration="1500" href="#">Musica</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="#">Arte</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="#">Instalaciones</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="#">Contacto</a>
+            </nav>
+            <button class="btn-signing">HIFAS IN</button>
+        </header>
+        <main>
+            <div class="content">
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    class="tag-box">
+                    <div class="tag">Inicio</div>
+                </div>
+                <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    data-aos-duration="3000">HIFAS<br>Experiments</h1>
+                <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    data-aos-duration="2500" class="description">
+                    Sus experimentaciones están impregnadas de capas atmosféricas, melodías intrigantes y ritmos pulsantes
+                </p>
+                <!-- <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    data-aos-duration="3000" class="buttons">
+                    <a href="#" class="btn-get-started">Documentation</a>
+                    <a href="#" class="btn-signing-main">Get Stared</a>
+                </div> -->
+            </div>
+        </main>
+        <spline-viewer data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+        data-aos-duration="3000" class="circle-particles"
+            url="https://prod.spline.design/iwJHvKHPWoQCrcqx/scene.splinecode"></spline-viewer>
+    </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.86/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
